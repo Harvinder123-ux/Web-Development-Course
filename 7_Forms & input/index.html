@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Input - learn</title>
+  </head>
+  <body>
+    <h1>Form to Submmit</h1>
+    <div>
+     <form action="post" method="post">
+      <label for="username">Enter Your Name:</label>
+     
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter Your Name"
+        required
+      />
+    </div>
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female" />
+    </div>
+    <div>
+      <label for="subscribe">Subscribe to Textutils</label>
+      <input type="checkbox" name="subscribe" id="subscribe" value="yes" />
+    </div>
+    <div>
+      <label for="Feedback">Enter Your Feedback</label>
+      <textarea name="Feedback" id="Feedback" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <select name="fruits">
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="cherry">cherry</option>
+            <option value="kewy">Kewy</option>
+
+        </select>
+    </div>
+</form>
+  </body>
+</html>
