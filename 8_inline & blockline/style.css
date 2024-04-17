@@ -1,0 +1,17 @@
+*{
+  color: black;
+}
+
+p{
+    background-color: blueviolet;
+    color: white;
+}
+
+a{
+    background-color: rgb(246, 116, 116);
+    
+}
+
+div{
+    background-color: yellow;
+}
