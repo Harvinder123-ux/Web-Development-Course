@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways To Add CSS In HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li{
+            display: flex;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: blue">Three Ways To Add CSS in HTML</h1>
+    <div style="background-color: rgb(0, 255, 51);">
+      <ol>
+        <li>
+          1 - Inline CSS - &lt;div style="background-color: yellow;"&gt;&lt;/div&gt;
+        </li>
+        <li>
+          2 - Internal CSS - in this Way we add style tag in HTML head and give
+          style to the selectors like for example: &lt;style&gt; div{
+          background-color: aqua; display: flex; } &lt;/style&gt;
+        </li>
+        <li>
+            3 External CSS - for this We create a External CSS file Which Is Linked with Our HTML Page Using Link Tag &lt;link rel="stylesheet" href="style.css"&gt;
+        </li>
+      </ol>
+    </div>
+    <!-- <p style="text-decoration: underline;">Everyone is good but imma alone honered one</p> -->
+  </body>
+</html>
