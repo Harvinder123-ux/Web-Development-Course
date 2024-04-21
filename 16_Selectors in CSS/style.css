@@ -1,0 +1,55 @@
+/* universal selector */
+*{
+    margin-top: 10px;
+    
+}
+/* this is element selector */
+div {
+    background-color: aqua;
+}
+/* class selectors */
+.python {
+    background-color: rgb(0, 255, 0);
+}
+
+/* id selectors */
+#shreya {
+    background-color: yellow;
+}
+
+/* child selectors - one exceptation should direct child */
+div > p {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+}
+
+/* now descendent selector - no matter where is but  element should present */
+div h1 {
+    background-color: blueviolet;
+}
+
+a {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* pseudo selector */
+a:visited {
+    color: rgb(255, 0, 217);
+}
+
+a:link {
+    color: rgb(255, 0, 0);
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    background-color: rgb(102, 255, 0);
+}
+
+p:first-child {
+    background-color: coral;
+}
