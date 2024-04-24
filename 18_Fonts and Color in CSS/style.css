@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+h1 {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+   
+}
+
+h2 {
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-thickness: 6px;
+    text-align: center
+    /* text-indent: 45px; */
+}
+
+div {
+    /* https://codepen.io/web-dot-dev/pen/yLojraG */
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 20px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-style: italic;
+    text-decoration: underline;
+    font-weight: 500; */
+    /* text-shadow:10px 100px 39px  blue; */
+    
+}
+
+p {
+    line-height: 2;
+    letter-spacing: 2px;
+    text-overflow: ellipsis;
+    border: 2px solid red;
+    /* width: 190px;
+    overflow: hidden; */
+}
