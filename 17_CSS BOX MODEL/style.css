@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.box {
+    background-color: rgb(217, 255, 0);
+}
+
+.box1 {
+    color: black;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid red;
+    height: 200px;
+    box-sizing: border-box;
+    /* box sizing karne ke baad actual mein jo height: 200px; hogi include padding and border */
+    /* agar hum border box nahi karte toh agar height: 100px; hai toh frr border and padding mileake jyada hogi */
+
+    /* important margin collapse - jo yeh kehta hai ki agar do element ki margin collapse ho rahi hai toh jiske margin jyada hai uski ek lgegi bas */
+}
+
+.box2 {
+    color: red;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 200px;
+    box-sizing: border-box;
+}
