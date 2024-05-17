@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* btw html is root element */
+html {
+  font-size: 12px;
+}
+
+.box {
+  border: 2px solid black;
+  /* pixel unit yeh screen ke resoluttion ke hisaab se hota h */
+  /* width: 1980px;  */
+  /* vw - viewport width screen ke view pport ke hisab se width */
+  width: 80vw;
+  height: 10vh;
+  /* isko left or right se 10vw ki margin lag jayegi autometically but yeh only work karta hai block level elementt pe inline like span pe nahi */
+  margin: auto;
+
+  background-color: aqua;
+
+  /* rem and emm units  */
+}
+
+.container {
+  border: 2px solid black;
+  /* pixel unit yeh screen ke resoluttion ke hisaab se hota h */
+  /* width: 1980px;  */
+  /* vw - viewport width screen ke view pport ke hisab se width */
+  width: 80vw;
+  /* height: 80vh; */
+  /* isko left or right se 10vw ki margin lag jayegi autometically but yeh only work karta hai block level elementt pe inline like span pe nahi */
+  margin: 23px auto;
+
+  background-color: aqua;
+
+  /* rem and emm units  */
+  /* font-size: 20px; */
+
+  /* now the concept of minimum width/heigh and max/widthHeight */
+  /* ek val dena ki minimum or max height and width kitni rahegi */
+  min-height: 80vw;
+}
+/* 
+em samaj lete hai toh container mein size 20px hai toh agar main specificaly .container k p mein jaake uska
+size em ke hisaab se karu toh woh inherit karege like
+1em - 20px
+1.5 = 30px
+2 = 40px
+according to multipication relation b/w container and p em size */
+.container > div {
+  /* rem and emm units  */
+  /* font-size: 2em; */
+
+  /* now lets talk about the rem - rem ka matlab hota hai root ke element ke hisaab se font size chle like 
+   agar root 12px par hai toh 1 rem same rahega
+   if 12px - 2rem = 24px */
+  font-size: 2rem;
+
+  /* ek aur unit percent % jiska use hota h parent or document or any root container ke hisaab se width height or size set karna; */
+  /* this is the example of p for parent container  */
+  width: 50%;
+  /* margin: auto; */
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.container > div > div {
+    border: 2px solid blue;
+    width: 50%;
+}
+/* 
+in simple words 
+em mean - jitna isko size milne waala tha uske guna/mul ise size dedo
+rem mean - root ke element ke according isko itna guna/multiply dedo size */
+
+/* now lets talk about another units - vmin and v max */
+.textBox {
+  background-color: aqua;
+  /* color: yellow; */
+  font-size: 1.2rem;
+  width: 80vw;
+  margin: 20px auto;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /* samjo laptop mein height kam hoti h toh vmin yaha hogi height and vmax hogi width; 
+    but phone mein width kam hoti h toh vmin hogi vw/width and vmax hogi vh/height*/
+  /* width: 100vmin; */
+  /* width: 100vh; */
+  /* abhi current device mein main agar 100vh ya fr 100vmin karta hu same rhega */
+}
+
+/* HowEver there is more complex units in Css You can Check there for more */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units */
