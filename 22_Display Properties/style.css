@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border: 2px solid #000000;
+    /* display: inline; */
+    /* display: inline-block; */
+    /* agar apka element inline hai toh top ki margin/padding nahi apply hogi */
+    /* padding: 45px; */
+    margin: 45px;
+    height: 85px;
+    width: 344px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* agar is cheej ko set karna hai toh aap element ko inline block ka use kar sakte ho */
+}
+
+.box1 {
+    /* display none karne se element ki use ki gyi space chli jayegi but visibility: se nahi; */
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+/* check out the other display properties */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
