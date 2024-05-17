@@ -1,0 +1,18 @@
+# Position and order of appearance: the order of which your CSS rules appear
+# Specificity: an algorithm which determines which CSS selector has the strongest match
+# Origin: the order of when CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+# Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+
+
+# specificity
+# Inline Styles: Styles applied directly to an HTML element using the style attribute have the highest specificity. Inline styles override any other styles, including those defined in external style sheets and internal style blocks.
+
+# ID Selectors: Selectors that target HTML elements by their unique ID have a higher specificity than other types of selectors. ID selectors are denoted by a hash symbol (#) followed by the ID value. For example, #myElement.
+
+# Class Selectors, Attribute Selectors, and Pseudo-Classes: Selectors targeting HTML elements based on class names, attributes, or pseudo-classes (like :hover or :nth-child()) have a medium specificity. These selectors are less specific than IDs but more specific than tag selectors.
+
+# Tag Selectors: Selectors targeting HTML elements by their tag name (e.g., div, p, span) have the lowest specificity. They apply to all elements of that type on the page.
+
+# !important Rule: Adding !important to a CSS declaration gives it the highest specificity, overriding any other styles regardless of their specificity. However, it's considered a best practice to avoid using !important whenever possible, as it can make CSS difficult to maintain and debug.
+
+# Specificity Hierarchy: When multiple selectors apply styles to the same element, the specificity of each selector is compared. If two selectors have the same specificity, the one declared last in the CSS takes precedence, following the principle of "last declaration wins."

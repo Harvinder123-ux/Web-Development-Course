@@ -1,0 +1,52 @@
+/* assume the specificity of element selector is 1 */
+h1 {
+  background-color: blue;
+}
+
+/* Assume class selector specificity is 10 */
+.yellow {
+  background-color: yellow;
+}
+ 
+/* Assume class selector specificity is 10 */
+.green {
+  background-color: green;
+}
+
+
+/* Assume id selector specificity is 100 */
+/* #purpleH {
+  background-color: purple;
+} */
+
+/* assume the inline style specificity is 1000 */
+
+/* Assume important selector specificity is 10,000 */
+/* .red {
+  background-color: red !important;
+} */
+
+
+/* Assume Atrribute selector specificity is 10 */
+[data-b = c]{
+    background-color: pink;
+}
+
+/* iska reason yeh hai ki css mein cascade algorithm hota hai jo decide or we can say determine karta hai ki konsi property lagegi or konsi nahi */
+
+
+
+
+
+/* yeh toh hoge simple selector but kuch complex selectors mean mixed selctor bhi hote hai toh unki specificity value calculate karke k=nikalte h */
+/* Assume class selector specificity is 10 + 1 */
+h1.yellow {
+    background-color: yellow;
+}
+
+/* quiz for calculate specificity */
+/* element + class + class + attribute + hover + : pseudo Class (1 + 10 + 10 + 10 + 10) = 41 */
+
+a.Container.Abhi[href]:hover {
+    color: red;
+}
