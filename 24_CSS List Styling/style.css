@@ -1,0 +1,21 @@
+/* *{
+    margin: 0;
+    padding: 0%;
+} */
+
+nav ul li {
+    color: white;
+    /* list-style: devanagari; */
+    background-color: purple;
+    list-style-position: inside;
+    padding: 5px;
+    border: 2px solid black;
+    /* list-style-image: url(listImg.gif); */
+    list-style-type: "😴";
+    /* list-style: disc inside url(listImg.gif); */
+
+}
+
+/* 
+leking agar humein aise horizontal banani hai nav tohh
+parent ko dislay flex do also can give some padding to it */
