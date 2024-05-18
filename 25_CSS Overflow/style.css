@@ -1,0 +1,22 @@
+.Box {
+  width: 30vw;
+  height: 50vh;
+  background-color: rgb(234, 255, 0);
+  margin: 55px;
+  
+  border: 2px solid black;
+  /* overflow: scroll; */
+  /* overflow: auto; */
+  /* white-space: nowrap;  */
+  /* overflow: hidden; */
+  /* overflow: clip; */
+  /* yeh jo clip waali props hoti hai  hidden jaise hoti hai lekin yeh programically bhi scroll khatam kr deti h */
+
+  /* individually overflow ko adjust krna */
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  /* text-overflow: ellipsis; */
+
+  /* muti syntax: ; */
+  overflow: hidden auto;
+}
