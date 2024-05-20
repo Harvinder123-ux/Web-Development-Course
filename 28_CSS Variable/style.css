@@ -1,0 +1,49 @@
+
+/* global variable */
+:root {
+    --color: blue; 
+    --secColor: rgba(255, 0, 0, 0.613);
+    --defaultPad: 55px;
+    --defaultSize: 1.3rem;
+    --defOp: 0.7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBox {
+    background-color: var(--color);
+    color: white;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+   list-style-type: none;
+   padding: var(--defaultPad);
+   border: 2px solid var(--secColor);
+}
+
+/* local variable */
+ul li:first-child {
+    --color : rgb(0, 255, 0);
+    /* pehle toh hum kahenge ki yeh color variable ko find karo agar milta h toh thk h else color di gyi second value dedo */
+    background-color: var(--color, pink);
+}
+
+.container {
+    background-color: var(--secColor);
+}
+
+.container p {
+    font-size: var(--defaultSize);
+}
+
+li:hover {
+    cursor: pointer;
+    opacity: var(--defOp);
+}
