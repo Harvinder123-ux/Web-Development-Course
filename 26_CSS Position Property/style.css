@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.box {
+    border: 2px solid black;
+    height: 533px;
+    width: 80vw;
+    margin: 3px;
+    padding: 5px;
+}
+
+.box1 {
+   /* position: relative; */
+   background-color: aqua;
+   /* position: sticky;
+   /* jabtak aap iski position tak scroll nahi karoge toh yeh static rahega after that its become sticky with doument like a navbar 
+   top: 5px;
+   margin: auto;
+   width: 90vw;
+   height: 100px; */
+   /* z-index: 1; */
+   position: absolute;
+   top: 0px;
+   left: 0;
+   
+}
+.box2 {
+ 
+   background-color: purple;
+   /* position: relative;
+   top: -55px;
+   left: 55px; */
+
+}
+.box3 {
+   
+   background-color: red;
+   /* position: fixed;
+   bottom: 75px;
+   left: 8vw;
+   height: 123px; */
+
+}
+.box4 {
+   
+   background-color: palevioletred;
+}
+
+.parent {
+    padding: 43px;
+    margin: 34px;
+    border: 3px solid purple;
+    /* position absolute lagta hai nearer position ensistor/parent ke like agar hamare box1 ko position absolute de di jaye and and usko top se 0 kar diya jaye toh abhi k current time 
+    mein box1 ke parent div ko koi bhi position nahi di gyi toh uske relative position nahi set karege and aise hi parent relative find karne ke chakkar mein woh last mein html doc ke pass
+    jayega and uske relative position set karege kyunki uske baad koi bhi ensistor nnahi hai toh even uspe position lagi ho ja nahi but woh usse relative work krega */
+    /* position: relative; */
+
+    /* lekin 2nd condition agar main box1 ke parent mean iss element ko position dedu toh box1 isse relative hi set hoga for example */
+    /* position: absolute; */
+
+    /* one more important thing (An Exception) :- */
+    /* transform, filter and perspective properties can also make and element as positioned  - meaining agar hum yeh likhi gyi properties lagate h toh yeh bhi work kar sakti hai as positon and box1 inse relative apni position set kar sakta h 
+    for Example hum use karte hai transform property ko*/
+    /* transform: translate(0); */
+    filter: invert();
+    /* perspective: 0cm; */
+}
+
+/* jo position pehle se hi css ki taraf se milti hi usko bolte hai static position mean jaisi hai baisi rahegi */
+/* also agar apko z index ko set karna h toh position ko static se hatakar koi aur property deni hogi like relative */
