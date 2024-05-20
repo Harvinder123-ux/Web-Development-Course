@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure padding and borders are included in the element's total width and height */
+  }
+  
+  .container {
+    width: 335px;
+    /* height: 500px; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: -2px 5px 14px rgba(20, 13, 13, 0.506);
+  }
+  
+  .imgBox {
+    width: 100%; /* Use 100% to fit the parent container */
+    height: 220px;
+    border-radius: 14px;
+    margin: 0px auto;
+    background-image: url('cardImg.jpg');
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+  }
+  
+  .textBox {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 3px;
+  }
+  
+  .options {
+    display: flex;
+    margin-top: 5px;
+    gap: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .options p {
+    border: 1px solid grey;
+    padding: 0px 7px 2px 7px;
+    border-radius: 13px;
+  }
+
+  .options p:hover {
+    background-color: #00ced1;
+  }
+  
+ .heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+  .para {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .cardBtn {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px; /* Adjusted to match the card's rounded style */
+    border: none;
+    background-color: aqua;
+    cursor: pointer; /* Added cursor pointer for better UX */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .cardBtn:hover {
+    background-color: #00ced1; /* Slightly darker aqua on hover */
+  }
+  
+  .btnBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
