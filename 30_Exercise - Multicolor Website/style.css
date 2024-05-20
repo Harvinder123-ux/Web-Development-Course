@@ -1,0 +1,123 @@
+
+:root {
+    --primaryColor : rgb(0, 0, 0);
+    --textColor : rgb(255, 0, 0);
+    --headingColor: white;
+    --cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--primaryColor);
+    display: flex;
+    color: var(--textColor);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    cursor: var(--cursor);
+}
+
+.searchBar{
+    display: flex;
+    /* padding: 5px; */
+    gap: 5px;
+}
+
+.searchBar input {
+    width: 555px;
+    height: 20px;
+    padding: 5px;
+    color: var(--textColor);
+}
+
+.searchBar button {
+    background-color: var(--textColor);
+    width: 65px;
+    /* padding: 4px; */
+    /* height: 36px; */
+    font-size: 1.1rem;
+    cursor: var(--cursor);
+}
+
+.searchBar button:hover {
+    background-color: var(--headingColor);
+    
+}
+
+.navOptions ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 35px;
+}
+
+.nav h2 {
+    color: var(--headingColor);
+}
+
+
+/* main time */
+
+body {
+    background-color: var(--primaryColor);
+}
+
+.heroSec {
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.heroSec .heroImg{
+    margin-top: 90px;
+    box-shadow: 2px 5px 14px rgba(255, 0, 0, 0.806);
+}
+
+.heroSec .heroImg:hover{
+    box-shadow: 2px 5px 45px rgba(255, 0, 0, 0.806);
+    border: 2px solid var(--textColor);
+    border-radius: 15px;
+}
+
+.heroImg img:hover {
+    border-radius: 15px;
+}
+
+.heroSec .heroImg img{
+    width: 15vw;
+    -webkit-box-reflect: below 5px
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: var(--headingColor); */
+    margin: 105px;
+    width: 60vw;
+    height: 400px;
+    gap: 45px;
+}
+
+.textBox h1 {
+  color: var(--textColor);
+  font-size: 3rem;
+  /* Add text reflection */
+  -webkit-box-reflect: below -10px
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+}
+
+.textBox p {
+    color: var(--headingColor);
+    /* Add text reflection */
+    -webkit-box-reflect: below 5px
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+}
