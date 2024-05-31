@@ -1,0 +1,119 @@
+:root {
+  --primaryColor: rgb(33, 182, 246);
+  --textColor: white;
+  --secColor: rgb(103, 201, 242);
+  --textBoxColr: red;
+  --footerColor: rgb(38, 87, 63);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  width: 100vw;
+  z-index: 1;
+  height: 45px;
+  /* padding: 5px; */
+  /* display: inline-block; */
+  background-color: var(--primaryColor);
+}
+
+nav ul {
+  padding-top: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  /* display: inline; */
+  padding: 55px;
+  display: inline;
+}
+
+nav ul li a {
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 45vw;
+  background-color: var(--secColor);
+
+  display: inline-block;
+  text-align: center;
+  /* margin: 5px 15px; */
+  gap: 15px;
+}
+
+.box {
+  width: 40vw;
+  padding: 60px;
+  height: 644px;
+  /* position: absolute; */
+  display: inline-block;
+  margin: 43px 12px;
+  text-align: center;
+}
+
+.textBox1 {
+  background-color: yellow;
+}
+
+.textBox2 {
+  background-color: rgb(255, 0, 238);
+  left: 55%;
+}
+
+.logo {
+  width: 45px;
+  height: 40px;
+  overflow: hidden;
+  background-color: red;
+  background-size: cover;
+  padding: 10px;
+  /* filter: invert(); */
+  position: fixed;
+  top: 42vw;
+  right: 25px;
+  border-radius: 50%;
+}
+/* 
+.logo img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+} */
+
+.PRcont {
+  width: 55vw;
+  height: 15vw;
+  /* padding: 5px; */
+  background-color: var(--textBoxColr);
+  position: relative;
+  top: 28px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.PRcont p {
+  color: var(--textColor);
+  font-size: 3rem;
+  position: absolute;
+  left: 9%;
+  top: 38%;
+}
+
+.footer {
+  margin-top: 3%;
+  width: 100vw;
+  height: 75px;
+  background-color: var(--footerColor);
+}
