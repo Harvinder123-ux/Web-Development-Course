@@ -1,0 +1,61 @@
+.container {
+  border: 2px solid black;
+  /* width: 50vw; 
+    margin: 15%; */
+  display: flex;
+  height: 50vw;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* flex-direction: row; */
+
+  /* content agar overflow ho raha ho toh use box mein wrap krne ke liye */
+  /* flex-wrap: wrap; */
+
+  /* multiple line ko justify karne k liye */
+  /* align-content: flex-start; */
+  /* justifyy items nahi hota h */
+
+  /* flex flow do cheejo ko set krne k liye hoti h ek flex direction and dusri flex wrap */
+  /* flex-flow: row wrap; */
+  /* gap: 105px; */
+  /* row-gap: 70px;
+  column-gap: 0px; */
+
+  /* row X col */
+  gap: 20px 50px;
+}
+
+.items {
+  width: 62px;
+  height: 62px;
+  background-color: red;
+  margin: 4px;
+  border: 2px solid;
+  /* flex-grow: 1; */
+
+  /* flex grow defaault value 0 hoti hai agar hum uski value badhaynage then woh boxes ki multipication ke hisaab se dugni jagah lega */
+}
+
+.item1{
+    /* flex-grow: 5; */
+    flex-shrink: 2;
+    /* flex-shrink: use hota h usually responsive site ke time agar width kam karni ho toh item shrink ho jaye value ke hisaab se although isme pehle flex wrap hata le */
+    align-self: flex-end;
+    /* ek specific element ko align karne k liye */
+}
+/* now lets learn about the items properties */
+/* jiska order sabse jyada hoga woh item woh item last mein aayegi else jiska kam hoga woh first mein ayega and default order 0 hota h sabka */
+
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
