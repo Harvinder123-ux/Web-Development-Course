@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Animations</title>
+    <style>
+            .container {
+              width: 50vw;
+              height: 50vh;
+              background-color: purple;
+            }
+
+            .box {
+              width: 90px;
+              height: 90px;
+      /*
+              animation-name: animation;
+              animation-duration: 3s;
+              animation-timing-function: cubic-bezier(0.83, 0.08, 0, 1.14);
+              animation-iteration-count: infinite;
+              animation-delay: 1s;
+              animation-direction: alternate-reverse; */
+              /* animation-play-state: paused; */
+
+              /* check the animation refrence by clicking link below */
+              /* https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction */
+
+              /* combined
+              animation: name duration timing-function delay iteration-count direction fill-mode;
+              animation: animation 3s ease-in-out 1s infinite; */
+              /* animation: animation 3s ease-in-out 1 forwards;  */
+              /* animation: animation 3s ease-in-out infinite alternate-reverse,
+                         animation2 3s ease-in-out infinite alternate-reverse; */
+            }
+            @keyframes animation {
+              from{
+
+                  background-color: yellow;
+              }
+              to{
+                  background-color: aqua;
+            
+
+              }
+            }
+
+            @keyframes animation2 {
+              0%{
+
+              }
+              50% {
+                  transform: translateX(10vw) translateY(10vw) rotate(60deg);
+                
+              }
+              100%{
+                  transform: translateX(20vw) translateY(20vw) rotate(360deg);
+                  
+              }
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Hello</div>
+    </div>
+  </body>
+</html>
