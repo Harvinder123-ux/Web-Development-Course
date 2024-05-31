@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Properties Example</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  background-color: #87CEEB;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Transform Examples */
+#translateX:hover {
+  transform: translateX(50px);
+}
+
+#translateY:hover {
+  transform: translateY(50px);
+}
+
+#translate:hover {
+  transform: translate(50px, 50px);
+}
+
+#translate3d:hover {
+  transform: translate3d(50px, 50px, 50px);
+}
+
+#translateZ:hover {
+  transform: translateZ(50px);
+}
+
+#scaleX:hover {
+  transform: scaleX(1.5);
+}
+
+#scaleY:hover {
+  transform: scaleY(1.5);
+}
+
+#scale:hover {
+  transform: scale(1.5);
+}
+
+#rotate:hover {
+  transform: rotate(45deg);
+}
+
+#rotateX:hover {
+  transform: rotateX(45deg);
+}
+
+#rotateY:hover {
+  transform: rotateY(45deg);
+}
+
+#skew:hover {
+  transform: skew(20deg, 20deg);
+}
+
+#skewX:hover {
+  transform: skewX(20deg);
+}
+
+#skewY:hover {
+  transform: skewY(20deg);
+}
+
+#matrix:hover {
+  transform: matrix(1, 0.5, -0.5, 1, 0, 0);
+}
+
+#matrix3d:hover {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, 50, 0, 1);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="translateX">translateX</div>
+    <div class="box" id="translateY">translateY</div>
+    <div class="box" id="translate">translate</div>
+    <div class="box" id="translate3d">translate3d</div>
+    <div class="box" id="translateZ">translateZ</div>
+    <div class="box" id="scaleX">scaleX</div>
+    <div class="box" id="scaleY">scaleY</div>
+    <div class="box" id="scale">scale</div>
+    <div class="box" id="rotate">rotate</div>
+    <div class="box" id="rotateX">rotateX</div>
+    <div class="box" id="rotateY">rotateY</div>
+    <div class="box" id="skew">skew</div>
+    <div class="box" id="skewX">skewX</div>
+    <div class="box" id="skewY">skewY</div>
+    <div class="box" id="matrix">matrix</div>
+    <div class="box" id="matrix3d">matrix3d</div>
+  </div>
+</body>
+</html>
