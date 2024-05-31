@@ -1,0 +1,51 @@
+.container{
+    border: 2px solid red;
+    display: grid;
+    width: 95vw;
+    height: 70vw;
+    /* grid-template-columns: [pehla] 100px [doosra] 100px [teesra]; */
+    /* grid-template-columns: 100px 100px; */
+    /* grid-template-rows: 150px 150px 150px; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    row-gap: 55px;
+    column-gap: 20px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+
+   /* align item and justify items hum tabuse karenge grid mein jab uske cell ke around align karna ho grids ko */
+   /* leking agar hamara agar container bada h aur grid choti h to hum align-content and justify content ka use krgenge */
+}
+
+.item{
+    width: 65px;
+    height: 65px;
+    background-color: aqua;
+    margin: 5px;
+    border: 2px solid black;
+    
+   
+   
+
+
+}
+
+.item-4{
+    grid-row: 2/3;
+    /* AAP AISE BHI LIKE SAKTE HO
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-column: 2/2; */
+    align-self: flex-start;
+
+}
+
+.item-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    /* border: 3px solid black; */
+
+}
