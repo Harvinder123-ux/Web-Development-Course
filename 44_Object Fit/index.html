@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>CSS - Object Fit</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 380px;
+            background-color: aqua;
+            /* whenever you set image in background then you can't able to download that image directly */
+            background-image: url(image1.jpg);
+            background-size: cover;
+            background-position: top right;
+            /* background-repeat: no-repeat; */
+
+           
+        }
+
+        /* .box img {
+            width: 400px;
+            height: 380px;
+        
+            object-fit: fill; /*by default*/
+            /* object-fit: contain; 
+             object-fit: cover;
+            /* object-position: top left; 
+            object-position: 10px 20px;
+            object-fit: center center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+     <!-- <img src="image1.jpg" alt=""> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
