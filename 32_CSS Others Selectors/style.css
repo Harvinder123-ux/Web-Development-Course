@@ -1,0 +1,52 @@
+/* .box:first-child {
+    background-color: red;
+} */
+/* 
+agar hum boxes ke first child par color lagyene toh sabhi par lag jayega kyunki
+boxes body ka first child ha lekin woh sirf box pr sahi lagega */
+/* 
+
+.box::first-line {
+    background-color:  yellow;
+} */
+/* 
+.boxes *{
+    color: blue;
+} */
+/* 
+p, a, .box, [data-color = "primary"]{
+    padding: 45px;
+    background-color: yellow;
+    border: 2px solid;
+} */
+
+/* pseudo elements */
+/* .box:nth-child(even){
+    background-color: purple;
+    color: white;
+}
+
+.box:nth-last-child(1){
+    background-color: red;
+} */
+
+.boxes::before{
+    content: "Hi Latika is also There";
+}
+
+.boxes::after{
+    content: "Hi itachi is Also There";
+}
+
+::selection{
+    background-color: aqua;
+}
+
+.box::first-letter{
+    color: rgb(255, 186, 47);
+    font-size: 45px;
+}
+
+input::placeholder{
+    color: rgb(255, 47, 47);
+}
