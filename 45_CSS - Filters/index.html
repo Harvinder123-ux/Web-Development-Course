@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - filters</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+        }
+        .img1 {
+            width: 400px;
+            height: 350px;
+            filter: blur(1px);
+            filter: invert();
+            object-fit: cover;
+        }
+        .img2 {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            /* filter: brightness(1) contrast(130%); */
+            /* filter: drop-shadow(34px 34px 20px yellow); */
+           
+        }
+        .img3 {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            /* filter: grayscale(103%);
+            filter: sepia(103%); */
+            filter: opacity(0.5);
+            /* check the other filters property for CSS filters */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+           
+           
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="image1.jpg" alt="">
+        <img class="img2" src="keanuReeves.jpg" alt="">
+        <img class="img3" src="leomessi.jfif" alt="">
+        
+    </div>
+</body>
+</html>
