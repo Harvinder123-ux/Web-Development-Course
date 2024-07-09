@@ -152,3 +152,6 @@ while (count < numbers - 2) {
   console.log(nth);
   count += 1;
 }
+
+
+//
