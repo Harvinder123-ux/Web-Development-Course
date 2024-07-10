@@ -48,3 +48,4 @@ console.log(array.reduce(red)); //when we use it on every element in array it pr
 // array.from = this function is used for create the string array
 console.log(Array.from("Abhi"))// output - [ 'A', 'b', 'h', 'i' ]
 
+
