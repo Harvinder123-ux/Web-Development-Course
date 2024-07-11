@@ -42,7 +42,7 @@ function factorialReduce(num) {
   let newArr = arr.slice(1).reduce((a, b) => {
     return a * b;
   });
-  console.log(newArr);
+  return newArr;
 }
 
 console.log("this one is factorial reduce", factorialReduce(5));
