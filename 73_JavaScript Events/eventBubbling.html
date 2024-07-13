@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child {
+        background-color: purple;
+        padding: 35px;
+        margin: 50px;
+        /* border: px solid greenyellow; */
+        color: white;
+        cursor: pointer;
+      }
+      .childContainer {
+        background-color: greenyellow;
+        padding: 35px;
+        margin: 50px;
+        /* border: px solid greenyellow; */
+        color: white;
+        cursor: pointer;
+      }
+      .container {
+        background-color: rgb(255, 47, 203);
+        padding: 35px;
+        margin: 50px;
+        /* border: px solid greenyellow; */
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>
+      Event bubbling practical example is that when we clicked at some Event by
+      with this all other events also triggered in in written below when we
+      clikced the child then childContainer and container events also was
+      triggered </p>here's the simple definition
+      Event bubbling is a type of event propagation in the Document Object Model (DOM) in which an event starts from the target element and then bubbles up to its parent elements and other ancestors in the hierarchy until it reaches the root element. This allows multiple event handlers for the same event to be executed in a specific order.
+    </p> -->
+    <h1>if You want to stop the event bubbling then stop the propogation</h1>
+    <div class="container">
+      <section class="childContainer">
+        <div class="child">I am a child</div>
+      </section>
+    </div>
+    <!-- you can also handle the event using the html attribute like on click -->
+    <input
+      type="button"
+      name="text"
+      id="basic"
+      value="click me"
+      onclick="alert('key') "
+    />
+    <!-- we can also add some others javaScript fuctions to the onclick -->
+
+    <script>
+      document.querySelector(".child").addEventListener("click", (e) => {
+        alert("child was clicked");
+        e.stopPropagation();
+      });
+      document
+        .querySelector(".childContainer")
+        .addEventListener("click", (e) => {
+          alert("childContainer was clicked");
+          e.stopPropagation();
+        });
+      document.querySelector(".container").addEventListener("click", () => {
+        alert("Container was clicked");
+        e.stopPropagation();
+      });
+
+      //   you can also remove the event listener
+      // document.removeEventListener
+
+      //using the function we used int the last video get random color
+      function getRandColor() {
+        let randomColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+        return randomColor;
+      }
+      let boxes = document.querySelectorAll(".box");
+      boxes.forEach((e) => {
+        e.style.backgroundColor = getRandColor();
+        e.style.color = getRandColor();
+      });
+
+      //setInerval - when i want some function of event will repeat after some times then we use the setInerval
+    //   let a = setInterval((e) => {
+    //     document.querySelector(".child").style.backgroundColor = getRandColor();
+    //   }, 1000);
+    //   console.log(a);
+      //   do this for clearInterval - clearInterval(1)
+
+
+      //setTimeout - when we want some function of event will execute after given time then we use the setTimeout
+      //in other word - it runs just only at once and we will use this in the pending promises
+      let b = setTimeout((e) => {
+        document.querySelector(".child").style.backgroundColor = getRandColor();
+      }, 5000);
+      console.log(b);
+       //   do this for clearTimeout - clearTimeout(1)
+    </script>
+  </body>
+</html>
