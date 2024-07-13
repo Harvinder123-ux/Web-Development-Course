@@ -37,3 +37,4 @@ boxes.forEach((e) => {
   e.style.backgroundColor = getRandColor();
   e.style.color = getRandColor();
 });
+
