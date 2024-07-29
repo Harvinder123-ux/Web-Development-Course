@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 50vw;
+        height: 40vh;
+        background-color: black;
+        margin: auto;
+      }
+
+      .para {
+        color: white;
+        padding: 5px;
+      }
+
+      
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .blinking-text {
+        animation: blink 1s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="para"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
