@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="DataBtn">Click Me</button>
+    <p id="response"></p>
+    <script>
+      document.getElementById("DataBtn").addEventListener("click", async () => {
+        try {
+          const response = await fetch("./create-employee", { method: "POST" });
+          const result = await response.text();
+          let para  = document.getElementById("response");
+          para.innerHTML = result;
+          console.log(result);
+        } catch (error) {
+          console.log(error);
+          document.getElementById("response").innerText =
+            "Error creating employee";
+        }
+      });
+    </script>
+  </body>
+</html>
