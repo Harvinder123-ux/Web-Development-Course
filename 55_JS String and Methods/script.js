@@ -1,10 +1,10 @@
 console.log("this is the string tutorial");
-let a = "Harvi";
-console.log(a[0])
-console.log(a[1])
-console.log(a[2])
-console.log(a[3])
-console.log(a[4])
+let a1 = "Harvi";
+console.log(a1[0])
+console.log(a1[1])
+console.log(a1[2])
+console.log(a1[3])
+console.log(a1[4])
 
 console.log(a.length);
 
@@ -43,4 +43,22 @@ console.log(str)
 
 //check the others vavrious methods of string using the browser repel or documentation of mozilla 
 // here is the link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
+
+// Use the less-than and greater-than operators to compare strings:
+
+// JS
+// Copy to Clipboard
+const a = "a";
+const b = "b";
+if (a < b) {
+  // true
+  console.log(`${a} is less than ${b}`);
+} else if (a > b) {
+  console.log(`${a} is greater than ${b}`);
+} else {
+  console.log(`${a} and ${b} are equal.`);
+}
+
 
